@@ -16,7 +16,7 @@ namespace EXAMPORTAL.Data
         {
             base.OnModelCreating(builder);
 
-            // ✅ Safe relationship: allows user deletion without breaking FK
+            // ✅ Safe relationship: allows user deletion without breaking FK   // its simple data seeding 
             builder.Entity<Form>()
                 .HasOne(f => f.CreatedBy)
                 .WithMany()
